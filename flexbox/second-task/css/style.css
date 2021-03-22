@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container,
+.box-left,
+.box-right,
+.box-top,
+.box {
+    background-color: darkred;
+}
+
+body,
+.box-bottom,
+.box-right {
+    background-color: darksalmon;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+}
+
+.box-upper,
+.box-lower {
+    display: flex;
+    height: 45%;
+    width: 95%;
+    background-color: darksalmon;
+}
+
+
+/* KONIEC KLAS WSPÓLNYCH I OGÓLNYCH*/
+
+.box-upper {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box-left {
+    width: 50%;
+    height: 90%;
+}
+
+.box-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90%;
+    width: 45%;
+}
+
+.box-right .box {
+    height: 30%;
+    width: 90%;
+}
+
+.box-lower {
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-top {
+    height: 45%;
+    width: 90%;
+}
+
+.box-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45%;
+    width: 90%;
+}
+
+.box-bottom .box {
+    height: 90%;
+    width: 15%;
+}
